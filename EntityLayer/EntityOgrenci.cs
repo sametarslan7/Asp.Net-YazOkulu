@@ -43,6 +43,12 @@ namespace EntityLayer
             get { return mail; }
             set { mail = value; }
         }
+        private String sifre;
+        public string SIFRE
+        {
+            get { return sifre; }
+            set { sifre = value; }
+        }
 
         private double bakiye;
         public double BAKIYE

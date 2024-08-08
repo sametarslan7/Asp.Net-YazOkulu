@@ -22,7 +22,12 @@ namespace EntityLayer
             set { basvuruOgrId = value; }
         }
 
-        
+        private int basvuruDersId;
+        public int DERSID
+        {
+            get { return basvuruDersId; }
+            set { basvuruDersId = value; }
+        }
 
     }
 }
