@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\YazOkulu\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\YazOkulu\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\YazOkulu\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\YazOkulu\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\user\Desktop\YazOkulu\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache

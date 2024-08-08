@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YazOkulu", "YazOkulu\", "{230DA112-6DEC-4D17-8B93-BFFFDDD499D1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{b9e89fb1-0965-4c04-bc87-f4a82a90907c}|BusinessLogicLayer.dll;{3ad777e7-908e-439b-ae13-e90a1d89693a}|DataAccessLayer.dll;{b116a77d-9fd4-4abe-b7d7-8984154df295}|EntityLayer.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62221"
 		Debug.AspNetCompiler.PhysicalPath = "YazOkulu\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62221\"
@@ -27,7 +28,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YazOkulu", "YazOkulu\", "{2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{B116A77D-9FD4-4ABE-B7D7-8984154DF295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{3AD777E7-908E-439B-AE13-E90A1D89693A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{3AD777E7-908E-439B-AE13-E90A1D89693A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{B9E89FB1-0965-4C04-BC87-F4A82A90907C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +50,10 @@ Global
 		{3AD777E7-908E-439B-AE13-E90A1D89693A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD777E7-908E-439B-AE13-E90A1D89693A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD777E7-908E-439B-AE13-E90A1D89693A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E89FB1-0965-4C04-BC87-F4A82A90907C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E89FB1-0965-4C04-BC87-F4A82A90907C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E89FB1-0965-4C04-BC87-F4A82A90907C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E89FB1-0965-4C04-BC87-F4A82A90907C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

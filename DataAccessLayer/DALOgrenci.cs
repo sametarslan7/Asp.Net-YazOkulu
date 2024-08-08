@@ -14,8 +14,8 @@ namespace DataAccessLayer
         public static int OgrenciEkle(EntityOgrenci parametre)
         {
             SqlCommand komut1 = new SqlCommand("insert into TBLOGRENCI " +
-                "(OGRAD,OGRSOYAD,OGRNUMARA,OGRMAIL,OGRSIFRE,OGRBAKIYE) " +
-                "values (@p1,@p2,@p3,@p4,@p5,@p6)",Baglanti.bgl);
+                "(OGRAD,OGRSOYAD,OGRNUMARA,OGRMAIL,OGRSIFRE) " +
+                "values (@p1,@p2,@p3,@p4,@p5)",Baglanti.bgl);
             if(komut1.Connection.State != ConnectionState.Open)
             {
                 komut1.Connection.Open();
@@ -25,7 +25,6 @@ namespace DataAccessLayer
             komut1.Parameters.AddWithValue("@p3", parametre.NUMARA);
             komut1.Parameters.AddWithValue("@p4", parametre.MAIL);
             komut1.Parameters.AddWithValue("@p5", parametre.SIFRE);
-            komut1.Parameters.AddWithValue("@p6", parametre.BAKIYE);
 
             return komut1.ExecuteNonQuery();
         }
