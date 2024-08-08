@@ -19,11 +19,11 @@ public partial class _Default : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         EntityOgrenci ent = new EntityOgrenci();
-        ent.AD = "Samet";
-        ent.SOYAD = "Arslan";
-        ent.NUMARA = "2030";
-        ent.MAIL = "sametarslan@gmail.com";
-        ent.SIFRE = "1907";
+        ent.AD = TextAd.Text;
+        ent.SOYAD = TextSoyad.Text;
+        ent.NUMARA = TextNumara.Text;
+        ent.MAIL = TextMail.Text;
+        ent.SIFRE = TextŞifre.Text;
         
         BLLOgrenci.OgrenciEkleBLL(ent);
 
