@@ -23,5 +23,9 @@ namespace BusinessLogicLayer
             }
             return -1;
         }
+        public List<EntityOgrenci> BLLOgrenciListesi()
+        {
+            return DALOgrenci.OgrenciListesi();
+        }
     }
 }
