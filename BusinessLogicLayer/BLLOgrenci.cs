@@ -27,5 +27,13 @@ namespace BusinessLogicLayer
         {
             return DALOgrenci.OgrenciListesi();
         }
+        public static bool OgrenciSilBLL(int p)
+        {
+            if(p!=null)
+            {
+                return DALOgrenci.OgrenciSil(p);
+            }
+            return false;
+        }
     }
 }
