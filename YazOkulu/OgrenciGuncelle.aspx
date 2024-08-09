@@ -1,10 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="OgrenciGuncelle.aspx.cs" Inherits="OgrenciGuncelle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <form runat="server" id="form1">
         <div class="form-group">
+            <div>
+                <asp:Label for="TextId" runat="server" Text="Öğrenci ID : " style="font-weight:700"></asp:Label>
+                <asp:TextBox ID="TextId" runat="server" CssClass ="form-control"></asp:TextBox>
+            </div>
+            <br />
             <div>
                 <asp:Label for="TextAd" runat="server" Text="Öğrenci Ad : " style="font-weight:700"></asp:Label>
                 <asp:TextBox ID="TextAd" runat="server" CssClass ="form-control"></asp:TextBox>
@@ -30,7 +35,8 @@
                 <asp:TextBox ID="TextSifre" runat="server" CssClass ="form-control"></asp:TextBox>
             </div>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Kaydet" OnClick="Button1_Click" CssClass="btn btn-info" />
+        <asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-warning" />
     </form> 
 </asp:Content>
+
 

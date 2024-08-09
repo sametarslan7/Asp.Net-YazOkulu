@@ -35,5 +35,9 @@ namespace BusinessLogicLayer
             }
             return false;
         }
+        public static List<EntityOgrenci> BLLOgrenciDetay(int p)
+        {
+            return DALOgrenci.OgrenciDetay(p);
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace DataAccessLayer
 
             return komut1.ExecuteNonQuery();
         }
+
         public static bool OgrenciSil(int parametre)
         {
             SqlCommand komut3 = new SqlCommand("DELETE FROM TBLOGRENCI WHERE OGRID=@p1", Baglanti.bgl);
@@ -38,6 +39,32 @@ namespace DataAccessLayer
             komut3.Parameters.AddWithValue("@p1", parametre);
             return komut3.ExecuteNonQuery()>0;
         }
+
+        public static List<EntityOgrenci> OgrenciDetay( int id)
+        {
+            List<EntityOgrenci> degerler = new List<EntityOgrenci>();
+            SqlCommand komut4 = new SqlCommand("select * from TBLOGRENCI where OGRID=@p1", Baglanti.bgl);
+            komut4.Parameters.AddWithValue("@p1", id);
+            if (komut4.Connection.State != ConnectionState.Open)
+            {
+                komut4.Connection.Open();
+            }
+            SqlDataReader dr = komut4.ExecuteReader();
+            while (dr.Read())
+            {
+                EntityOgrenci ent = new EntityOgrenci();
+                ent.AD = dr["OGRAD"].ToString();
+                ent.SOYAD = dr["OGRSOYAD"].ToString();
+                ent.NUMARA = dr["OGRNUMARA"].ToString();
+                ent.MAIL = dr["OGRMAIL"].ToString();
+                ent.SIFRE = dr["OGRSIFRE"].ToString();
+                ent.BAKIYE = Convert.ToDouble(dr["OGRBAKIYE"]);
+                degerler.Add(ent);
+            }
+            dr.Close();
+            return degerler;
+        }
+
         public static List<EntityOgrenci> OgrenciListesi()
         {
             List<EntityOgrenci> degerler=new List<EntityOgrenci>();
