@@ -69,9 +69,9 @@ namespace DataAccessLayer
         {
             SqlCommand komut5 = new SqlCommand("update TBLOGRENCI set OGRAD=@p1,OGRSOYAD=@p2,OGRNUMARA=@p3,OGRMAIL=@p4,OGRSIFRE=@p5 where OGRID=@p6", Baglanti.bgl);
             
-            if (komut1.Connection.State != ConnectionState.Open)
+            if (komut5.Connection.State != ConnectionState.Open)
             {
-                komut1.Connection.Open();
+                komut5.Connection.Open();
             }
 
             komut5.Parameters.AddWithValue("@p1", deger.AD);
