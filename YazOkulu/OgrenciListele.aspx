@@ -14,7 +14,19 @@
             <th>Öğrenci Bakiye</th>
         </tr>
         <tbody>
-
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <tr>
+                        <td><%#Eval("ID") %></td>
+                        <td><%#Eval("AD") %></td>
+                        <td><%#Eval("SOYAD") %></td>
+                        <td><%#Eval("NUMARA") %></td>
+                        <td><%#Eval("MAIL") %></td>
+                        <td><%#Eval("SIFRE") %></td>
+                        <td><%#Eval("BAKIYE") %></td>
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
         </tbody>
     </table>
 </asp:Content>
