@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using EntityLayer;
 using DataAccessLayer;
+using System.Reflection.Metadata;
 
 
 namespace BusinessLogicLayer
@@ -29,7 +30,7 @@ namespace BusinessLogicLayer
         }
         public static bool OgrenciSilBLL(int p)
         {
-            if(p!=null)
+            if(p>=0)
             {
                 return DALOgrenci.OgrenciSil(p);
             }
@@ -38,6 +39,16 @@ namespace BusinessLogicLayer
         public static List<EntityOgrenci> BLLOgrenciDetay(int p)
         {
             return DALOgrenci.OgrenciDetay(p);
+        }
+        public static bool OgrenciGuncelleBLL(EntityOgrenci p)
+        {
+            if (p.AD != null && p.SOYAD != null
+            && p.NUMARA != null && p.MAIL != null
+                && p.SIFRE != null)
+            {
+                return DALOgrenci.OgrenciGuncelle(p);
+            }
+            return false;
         }
     }
 }
