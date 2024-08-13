@@ -24,4 +24,12 @@ public partial class Dersler : System.Web.UI.Page
         }
        
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        EntityBasvuruFormu ent = new EntityBasvuruFormu();
+        ent.OGRID = int.Parse(TextBox1.Text);
+        ent.DERSID = int.Parse(DropDownList1.SelectedValue.ToString());
+        BLLDers.TalepEkleBLL(ent);
+    }
 }

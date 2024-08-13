@@ -8,9 +8,9 @@ using EntityLayer;
 
 namespace BusinessLogicLayer
 {
-    class BLLDers
+    public class BLLDers
     {
-        public static List<EntityDers> BLLDers()
+        public static List<EntityDers> BLLDersListesi()
         {
             return DALDers.DersListesi();
         }
@@ -18,7 +18,7 @@ namespace BusinessLogicLayer
         {
             if(p.OGRID != null && p.DERSID != null)
             {
-                return DALDers.DALTalepEkle(p);
+                return DALDers.TalepEkle(p);
             }
             return -1;
         }

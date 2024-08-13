@@ -36,7 +36,7 @@ namespace DataAccessLayer
             return degerler;
         }
     }
-    public static int DALTalepEkle(EntityBasvuruFormu parametre)
+    public static int TalepEkle(EntityBasvuruFormu parametre)
     {
         SqlCommand komut2 = new SqlCommand("insert into TBLBASVURUFORMU (OGRID,DERSID) values (@p1,@p2)", Baglanti.bgl);
         komut2.Parameters.AddWithValue("@p1", parametre.OGRID);
