@@ -14,5 +14,13 @@ namespace BusinessLogicLayer
         {
             return DALDers.DersListesi();
         }
+        public static int TalepEkleBLL(EntityBasvuruFormu p)
+        {
+            if(p.OGRID != null && p.DERSID != null)
+            {
+                return DALDers.DALTalepEkle(p);
+            }
+            return -1;
+        }
     }
 }

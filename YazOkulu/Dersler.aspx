@@ -15,7 +15,7 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </div>
         <br />
-        <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-success"  />
+        <asp:Button ID="Button1" runat="server" Text="Ders Talep Oluştur" CssClass="btn btn-success"  />
     </form>
 
 
